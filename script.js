@@ -1,5 +1,5 @@
 const correctUsername = "test";
-const correctPassword = "test";
+const correctPassword = "1234";
 
 function renderLoginPage() {
     const root = document.getElementById('root');
@@ -19,6 +19,20 @@ main.style.margin = "0 auto";
 main.style.marginTop ="20%";
 main.style.borderRadius ="25px";
 main.style.padding ="20px";
+
+let.container = document.createElement("div");
+container.loginForm.add("login-form");
+
+const heading = document.createElement("h2");
+heading.textContent = "Logga in";
+
+const usernameInput = document.createElement("input");
+usernameInput.type = "text";
+usernameInput.placeholder = "Användarnamn"
+
+const passwordInput = document.createElement("input");
+passwordInput.type = "password";
+passwordInput.placeholder = "Lösenord";
 
 
 root.appendChild(main);
