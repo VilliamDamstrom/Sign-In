@@ -5,3 +5,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(138, 52, 151);
 }
+
+.login-form {
+    width: 100%;
+    text-align: center;
+}
