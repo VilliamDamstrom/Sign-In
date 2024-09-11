@@ -82,7 +82,7 @@ welcomeHeader.textContent = "Välkommen!"
  const logoutBtn = document.createElement('button');
 logoutBtn.textContent = "Logga ut!";
  logoutBtn.addEventListener('click', function() {
-    logoutBtn();
+    logout();
 });
 
 container.appendChild(welcomeHeader);
@@ -99,11 +99,27 @@ main.appendChild(container);
 function login(username, password) {
     if (username === correctUsername && password === correctPassword) {
         localStorage.setItem('loggedIn', 'true');
-
+        renderWelcomePage();
     } else {
         alert("Fel användarnamn eller lösenord!");
     }
 }
+
+function logout() {
+    localStorage.removeItem('loggedIn');
+    renderLoginPage();
+}
+
+// Check if the user is already sign in
+window.onload = function () {
+    const loggedIn = localStorage.getItem('loggedIn');
+    if (loggedIn === 'true') {
+        renderWelcomePage();
+    } else {
+        renderLoginPage();
+    }
+};
+
 
 renderLoginPage();
 
