@@ -24,7 +24,7 @@ let container = document.createElement("div");
 container.classList.add("login-form");
 
 const header = document.createElement("h2");
-header.textContent = "Logga in";
+header.textContent = "Välkommen!";
 
 const usernameInput = document.createElement('input');
 usernameInput.type = "text";
@@ -77,7 +77,7 @@ let container = document.createElement("div");
 container.classList.add("welcome-form");
 
 const welcomeHeader = document.createElement("h2");
-welcomeHeader.textContent = "Välkommen!"
+welcomeHeader.textContent = "inloggad!"
 
  const logoutBtn = document.createElement('button');
 logoutBtn.textContent = "Logga ut!";
