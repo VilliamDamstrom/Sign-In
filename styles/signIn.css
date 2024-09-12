@@ -6,7 +6,7 @@ body {
     background-color: rgb(138, 52, 151);
 }
 
-.login-form {
+.login-form, .welcome-form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-.login-form h2 {
+.login-form h2, .welcome-form h2 {
     color: white;
     margin-bottom: 75px;
 }
@@ -35,7 +35,21 @@ body {
     color: white;
 }
 
+
+.welcome-form button {
+    width: 15%;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
 .login-form button:hover {
+    background-color: rgb(138, 52, 151);
+    
+}
+
+.welcome-form button:hover {
     background-color: rgb(138, 52, 151);
     
 }

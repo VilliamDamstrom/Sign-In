@@ -24,7 +24,7 @@ let container = document.createElement("div");
 container.classList.add("login-form");
 
 const header = document.createElement("h2");
-header.textContent = "Logga in";
+header.textContent = "Välkommen!";
 
 const usernameInput = document.createElement('input');
 usernameInput.type = "text";
@@ -59,8 +59,8 @@ function renderWelcomePage() {
     // Clear root content
     root.innerHTML = '';
 
-// styled the main on the welcome page here aswell since it was almost
-// the same code    
+// Styled the main on the welcome page aswell here since i used almost
+// the same code and for practice
 let main = document.createElement("main");
 main.style.width = "600px";
 main.style.minHeight = "400px";
@@ -77,7 +77,7 @@ let container = document.createElement("div");
 container.classList.add("welcome-form");
 
 const welcomeHeader = document.createElement("h2");
-welcomeHeader.textContent = "Välkommen!"
+welcomeHeader.textContent = "inloggad!"
 
  const logoutBtn = document.createElement('button');
 logoutBtn.textContent = "Logga ut!";
