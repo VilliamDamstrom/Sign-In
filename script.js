@@ -6,8 +6,7 @@ function renderLoginPage() {
     // Clear root content
     root.innerHTML = '';
 
-// Styled the main here but prefer to style in css,
-// makes the script file look cleaner imo
+// Styled the main here but prefer to style in css
 let main = document.createElement("main");
 main.style.width = "600px";
 main.style.minHeight = "400px";
@@ -46,9 +45,9 @@ container.appendChild(usernameInput);
 container.appendChild(passwordInput);
 container.appendChild(loginBtn);
 
-// App container to main
+// Add container to main
 main.appendChild(container);
-// Append main to the root
+// Add main to the root
 root.appendChild(main);
 
 }
@@ -90,7 +89,7 @@ container.appendChild(logoutBtn);
 
 // Add container to main
 main.appendChild(container);
-// Append main to the root
+// Add main to the root
  root.appendChild(main);
 
 }
