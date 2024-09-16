@@ -27,7 +27,7 @@ body {
     border-radius: 5px;
 }
 
-.login-form button {
+.login-form button, .welcome-form button {
     width: 15%;
     padding: 3px;
     margin-top: 10px;
@@ -35,21 +35,7 @@ body {
     color: white;
 }
 
-
-.welcome-form button {
-    width: 15%;
-    padding: 3px;
-    margin-top: 10px;
-    background-color: black;
-    color: white;
-}
-
-.login-form button:hover {
-    background-color: rgb(138, 52, 151);
-    
-}
-
-.welcome-form button:hover {
+.login-form button:hover, .welcome-form button:hover {
     background-color: rgb(138, 52, 151);
     
 }
