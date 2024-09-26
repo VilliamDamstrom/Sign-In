@@ -108,16 +108,25 @@ function renderErrorPage() {
     const errorHeader = document.createElement("h2");
     errorHeader.textContent = "Fel användarnamn eller lösenord!";
 
-    
-}
+    const tryAgainBtn = document.createElement("button");
+    tryAgainBtn.textContent = "Försök igen!";
+    tryAgainBtn.addEventListener("click", function () {
+        renderLoginPage();
+    });
 
+    container.appendChild(errorHeader);
+    container.appendChild(tryAgainBtn);
+
+    main.appendChild(container);
+    root.appendChild(main);
+}
 
 function login(username, password) {
     if (username === correctUsername && password === correctPassword) {
         localStorage.setItem('loggedIn', 'true');
         renderWelcomePage();
     } else {
-        alert("Fel användarnamn eller lösenord!");
+        renderErrorPage();
     }
 }
 
