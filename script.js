@@ -94,6 +94,7 @@ main.appendChild(container);
 
 }
 
+
 function renderErrorPage() {
     const root = document.getElementById('root');
     // Clear root content
