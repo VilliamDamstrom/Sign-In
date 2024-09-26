@@ -94,6 +94,23 @@ main.appendChild(container);
 
 }
 
+function renderErrorPage() {
+    const root = document.getElementById('root');
+    // Clear root content
+    root.innerHTML = '';
+
+    let main = document.createElement("main");
+    main.classList.add("error-form-main");
+
+    let container = document.createElement("div");
+    container.classList.add("error-form");
+
+    const errorHeader = document.createElement("h2");
+    errorHeader.textContent = "Fel användarnamn eller lösenord!";
+
+    
+}
+
 
 function login(username, password) {
     if (username === correctUsername && password === correctPassword) {
